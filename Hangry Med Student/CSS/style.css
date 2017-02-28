@@ -1,0 +1,36 @@
+body {
+  background-color: plum;
+}
+
+h1 {
+  text-align: center
+}
+
+p {
+  color: black;
+  font-size: 20px;
+}
+
+form {
+  color: yellow;
+  font-size: 20px;
+}
+
+.recipe {
+  background-color: white;
+}
+
+#title-menu {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+#title-links {
+  width: 20%;
+}
+
+#title-title {
+  width: 80%;
+}

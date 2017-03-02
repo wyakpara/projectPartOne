@@ -1,18 +1,32 @@
 body {
-  background-color: plum;
+  color: navy;
+  font-family: sans-serif;
+  background-color: white;
+  font-size: 120%;
+  margin: 0;
+}
+
+.bg-holder {
+  background: url("../images/scrambled-eggs.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: .6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 h1 {
+  font-family: sans-serif;
+  text-transform: uppercase;
   text-align: center
 }
 
 p {
-  color: black;
-  font-size: 20px;
-}
-
-form {
-  color: yellow;
+  color: navy;
   font-size: 20px;
 }
 
@@ -23,14 +37,93 @@ form {
 #title-menu {
   position: fixed;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: plum;
+  color: navy;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 #title-links {
-  width: 20%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#title-links ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+#title-links ul li {
+  display: inline-block;
+  border: 2px solid white;
+  padding: 10px;
+  min-width: 150px;
+  background: transparent;
+  transition: all 500ms ease-in-out;
+}
+
+#title-links ul li:hover {
+  transition: all 500ms ease-in-out;
+  background: white;
+  border: 2px solid black;
+}
+
+#title-links ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 #title-title {
-  width: 80%;
+  width: 50%;
+  margin: 0 auto;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+#title-title a {
+  text-decoration: none;
+}
+
+#title-title a:visited {
+  color: navy;
+}
+
+.firstpara {
+  padding-top: 130px;
+}
+
+.frames {
+  display: flex;
+}
+
+.frames iframe {
+  flex: 1;
+  border: 1px solid black;
+  min-height: 300px;
+  max-height: 500px;
+}
+
+.frames iframe:first-child {
+  margin-right: 5px;
+}
+
+.frames iframe:last-child {
+  margin-left: 5px;
+}
+
+.recipe-form fieldset {
+  border: none;
+  text-align: center;
+}
+
+#contact-comment {
+  height: 100px;
+  width: 60%
+}
+
+.main-content {
+  padding: 0 20px;
 }

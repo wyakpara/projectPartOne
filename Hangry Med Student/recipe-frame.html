@@ -7,27 +7,41 @@
   <title>Recipe Builder</title>
 </head>
 <body>
-  <p>
-    <h1>Recipe Builder</h1> <br>
-    Use this page to select recipes from our library and display them simultaneously.
-  </p>
-  <form class="recipe-form" action="recipe.html" method="post">
-    <button type="button" name="rbutton1">Choose Recipe 1</button>
-    <button type="button" name="rbutton2">Choose Recipe 2</button> <br>
-    <button type="button" name="toggle1">Show first recipe and directions</button>
-    <button type="button" name="toggle2">Show second recipe and directions</button>
-    <button type="button" name="toggle3">Show both recipes</button>
-  </form>
-  <!--
-    <section class="recipe-block" id="recipe-block-one">
-      A recipe goes here!
+  <section id="title-menu">
+    <div id="title-title">
+      <h1><a href="index.html">The Hangry Med Student</a></h1>
+    </div>
+    <div id="title-links">
+      <ul>
+        <li><a href="PrepTips.html">Tips</a> <br></li>
+        <li><a href="recipe-frame.html">Meal Prep Builder</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="main-content">
+    <p class="firstpara">
+      <h1>Recipe Builder</h1> <br>
+      Use this page to select recipes from our library and display them simultaneously.
+    </p>
+    <form class="recipe-form" action="recipe.html" method="post">
+      <fieldset>
+        Choose your recipes:
+        <button type="button" name="rbutton1">Choose Recipe 1</button>
+        <button type="button" name="rbutton2">Choose Recipe 2</button>
+      </fieldset>
+      <fieldset>
+        Choose your display:
+        <button type="button" name="toggle1">Show first recipe and directions</button>
+        <button type="button" name="toggle2">Show second recipe and directions</button>
+        <button type="button" name="toggle3">Show both recipes</button>
+      </fieldset>
+    </form>
+    <section class="frames">
+      <iframe src="scrambieggs.html"></iframe>
+      <iframe src="scrambieggs.html"></iframe>
     </section>
-    <section class="recipe-block" id="recipe-block-two">
-      A recipe goes here!
-    </section>
-  -->
-
-  <iframe src="scrambieggs.html" width="40%" height="100%"></iframe>
-  <iframe src="scrambieggs.html" width="40%" height="100%"></iframe>
+  </section>
+  <div class="bg-holder"></div>
 </body>
 </html>
